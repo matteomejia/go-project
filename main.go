@@ -16,7 +16,7 @@ type Workshop struct {
 }
 
 func main() {
-	db, err := gorm.Open(sqlite.Open("db.sqlite"), &gorm.Config{})
+	db, err := gorm.Open(sqlite.Open("db.sqlite3"), &gorm.Config{})
 	if err != nil {
 		panic("Failed to connect to database")
 	}
